@@ -33,11 +33,11 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-ts": "tsc -p tsconfig.build.json",
+    "build-ts": "tsc -p tsconfig.build.json && yarn build-css",
     "build-css": "lessc ./src/styles/index.less ./dist/index.css",
     "clean": "rimraf ./dist",
-    "build:lib": "yarn clean && yarn build-ts && yarn build-css",
-    "prepublishOnly": "yarn lint && yarn build-ts"
+    "build:lib": "vue-cli-service build --target lib --name myLib ./src/index.tsx",
+    "prepublishOnly": "yarn lint && yarn build-ts && yarn build-css"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",
