@@ -1,9 +1,24 @@
 module.exports = {
-  // pages: {
-  //   index: {
-  //     // page 的入口
-  //     entry: 'src/index.tsx',
-  //   },
-  // },
-  productionSourceMap: false,
+  chainWebpack(config) {
+    config.module
+      .rule('tsx')
+      .use('ts-loader')
+      .loader('ts-loader')
+      .tap((opts) => {
+        opts.transpileOnly = false
+        opts.happyPackMode = false
+        return opts
+      })
+    config.module
+      .rule('ts')
+      .use('ts-loader')
+      .loader('ts-loader')
+      .tap((opts) => {
+        opts.transpileOnly = false
+        opts.happyPackMode = false
+        return opts
+      })
+  },
+  // productionSourceMap: false,
+  parallel: false,
 }
