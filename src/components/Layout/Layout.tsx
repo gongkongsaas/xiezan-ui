@@ -1,6 +1,6 @@
 import MenuAside from './MenuAside/index'
 import HeaderNav from './HeaderNav/index'
-import { defineComponent, h, PropType } from 'vue'
+import { defineComponent, PropType } from 'vue'
 
 interface MenuAsideData {
   id: number

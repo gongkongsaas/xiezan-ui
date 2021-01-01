@@ -1,4 +1,4 @@
-import { defineComponent, h, PropType } from 'vue'
+import { defineComponent, PropType } from 'vue'
 
 interface MenuAsideData {
   id: number
