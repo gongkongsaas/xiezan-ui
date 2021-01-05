@@ -1,23 +1,27 @@
 <template>
   <div>
-    <div>111</div>
+    <Layout>
+      <Button size="lg"></Button>
+    </Layout>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { Button, Layout } from './index'
 export default defineComponent({
   name: 'App',
+  components: {
+    Button,
+    Layout,
+  },
 })
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="less">
+@import url('./styles/index.less');
+* {
+  margin: 0;
+  padding: 0;
 }
 </style>

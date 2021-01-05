@@ -13,9 +13,7 @@ export default defineComponent({
         <div id="header-nav">
           <div class="operation-main-information"></div>
           <div class="mall-company-name">
-            <div class="company-name" v-if={props.companyName}>
-              {props.companyName}
-            </div>
+            <div class="company-name">{props.companyName}</div>
           </div>
           <div class="option-box"></div>
           <div class="mall-compan-container"></div>

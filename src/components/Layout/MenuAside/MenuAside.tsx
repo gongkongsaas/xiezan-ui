@@ -26,10 +26,7 @@ export default defineComponent({
           <ul class="menu-list">
             {props.menuAsideData.map((item) => {
               return (
-                <li
-                  v-bind-key={item.id}
-                  v-on-click={routerTo.bind(null, item.path)}
-                >
+                <li key={item.id} onClick={routerTo.bind(null, item.path)}>
                   {item.msg}
                 </li>
               )

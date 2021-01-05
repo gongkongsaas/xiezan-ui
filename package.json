@@ -67,5 +67,8 @@
       "vue-cli-service lint",
       "git add"
     ]
+  },
+  "dependencies": {
+    "less-loader": "^7.2.1"
   }
 }
