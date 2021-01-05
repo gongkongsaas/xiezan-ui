@@ -1,19 +1,22 @@
 <template>
   <div>
     <Layout>
-      <Button size="lg"></Button>
+      <Crumb title="商城公告">
+        <Button size="lg"></Button>
+      </Crumb>
     </Layout>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Button, Layout } from './index'
+import { Button, Layout, Crumb } from './index'
 export default defineComponent({
   name: 'App',
   components: {
     Button,
     Layout,
+    Crumb,
   },
 })
 </script>
