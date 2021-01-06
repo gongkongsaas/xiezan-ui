@@ -4,7 +4,9 @@ export default defineComponent({
   setup(props, { slots }) {
     return () => (
       <div class="main-box">
-        <main class="main">{slots.default && slots.default()}</main>
+        <main class="main">
+          <div class="main-inner">{slots.default && slots.default()}</div>
+        </main>
       </div>
     )
   },

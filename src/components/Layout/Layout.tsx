@@ -11,8 +11,8 @@ export default defineComponent({
   setup(props, { slots }) {
     console.log(testData)
     return () => (
-      <div id="layout" class="layout">
-        <HeaderNav class="header-nav" />
+      <div class="layout">
+        <HeaderNav />
         <div class="main-wrap">
           <MenuAside class="menu-aside" menuAsideData={menuAsideData.data} />
           <Main>
