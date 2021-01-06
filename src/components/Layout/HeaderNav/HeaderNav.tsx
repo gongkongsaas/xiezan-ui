@@ -5,7 +5,7 @@ export default defineComponent({
   props: {
     companyName: {
       type: String,
-      default: '运营中心',
+      default: '运营中心菜单',
     },
     userInfoData: {
       type: Object as PropType<UserInfoType>,
