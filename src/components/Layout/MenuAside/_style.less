@@ -1,14 +1,64 @@
-#slider-bar {
-    position: relative;
-  
-    .menu-list {
-      li {
-        width: 74px;
-        height: 40px;
-        padding-left: 16px;
-        text-align: center;
-        line-height: 40px;
-        cursor: pointer;
+#menu-aside {
+  position: relative;
+
+  .menu-list {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    li {
+      width: 74px;
+      height: 40px;
+      padding-left: 16px;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: rgba(212, 212, 212, 0.996);
+
+        i {
+          flex-shrink: 0;
+          text-align: left;
+          width: 24px;
+          font-size: 20px;
+        }
+        span {
+          font-size: 14px;
+          white-space: nowrap;
+        }
       }
     }
   }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 74px;
+    height: 40px;
+    padding-left: 16px;
+    background-color: #1e2834;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+
+    a {
+      display: flex;
+      align-items: center;
+      color: rgba(212, 212, 212, 0.996);
+
+      i {
+        flex-shrink: 0;
+        text-align: left;
+        width: 24px;
+        font-size: 20px;
+      }
+      span {
+        font-size: 14px;
+        white-space: nowrap;
+      }
+    }
+  }
+}

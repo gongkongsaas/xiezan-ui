@@ -1,0 +1,110 @@
+{
+  "code": 0,
+  "message": null,
+  "data": [
+    { "menuUrl": "/order/operation/list-index", "unprocessedCount": 0 },
+    { "menuUrl": "/order/operation/v3/list", "unprocessedCount": 0 },
+    {
+      "menuUrl": "/order/operation/v4/list-unpaid-order",
+      "unprocessedCount": 100
+    },
+    {
+      "menuUrl": "/order/stock-out/v4/stock-out-order-list",
+      "unprocessedCount": 100
+    },
+    {
+      "menuUrl": "/porder/operation/v4/list-abnormal-order",
+      "unprocessedCount": 558
+    },
+    { "menuUrl": "/purchase/purchase-apply/index", "unprocessedCount": 254 },
+    {
+      "menuUrl": "/purchase/purchase-apply/index-new",
+      "unprocessedCount": 405
+    },
+    { "menuUrl": "/purchase/purchase-apply/v3/index", "unprocessedCount": 254 },
+    {
+      "menuUrl": "/purchase/purchase-apply/v4/detail-index-new",
+      "unprocessedCount": 405
+    },
+    { "menuUrl": "/purchase/purchase/index", "unprocessedCount": 3526 },
+    { "menuUrl": "/purchase/purchase/index-new", "unprocessedCount": 3526 },
+    {
+      "menuUrl": "/purchase/purchase/purchase-management-index",
+      "unprocessedCount": 3526
+    },
+    {
+      "menuUrl": "/inventory/stock-in/v2/purchase-stock-in-index",
+      "unprocessedCount": 882
+    },
+    {
+      "menuUrl": "/inventory/stock-in/index-management",
+      "unprocessedCount": 683
+    },
+    {
+      "menuUrl": "/inventory/stock-in/v2/stock-in-index",
+      "unprocessedCount": 683
+    },
+    {
+      "menuUrl": "/inventory/stock-out/stock-out-index",
+      "unprocessedCount": 253
+    },
+    {
+      "menuUrl": "/inventory/stock-out/index-business",
+      "unprocessedCount": 151
+    },
+    {
+      "menuUrl": "/inventory/stock-out/v2/business-index",
+      "unprocessedCount": 151
+    },
+    {
+      "menuUrl": "/inventory/stock-out/v4/sales-stock-out/index",
+      "unprocessedCount": 151
+    },
+    {
+      "menuUrl": "/inventory/delivery-order/delivery-order-index",
+      "unprocessedCount": 8302
+    },
+    {
+      "menuUrl": "/inventory/delivery-order/v2/delivery-order-index",
+      "unprocessedCount": 8302
+    },
+    {
+      "menuUrl": "/inventory/warehouse/v4/inventory-early-warning",
+      "unprocessedCount": 41
+    },
+    {
+      "menuUrl": "/supply-chain/p-supply-discount/index",
+      "unprocessedCount": 224
+    },
+    {
+      "menuUrl": "/finance/purchase-payment/v3/index",
+      "unprocessedCount": 580
+    },
+    { "menuUrl": "/finance/invoice-in/v3/index", "unprocessedCount": 174 },
+    { "menuUrl": "/finance/invoice-out/v3/index", "unprocessedCount": 590 },
+    { "menuUrl": "/pfinance/invoice-out/v3/index", "unprocessedCount": 0 },
+    {
+      "menuUrl": "/approval/approval-center/approval-unfinished-management",
+      "unprocessedCount": 0
+    },
+    {
+      "menuUrl": "/approval/approval-center/approval-createdbyme-management",
+      "unprocessedCount": 411
+    },
+    { "menuUrl": "/message/message/message-list", "unprocessedCount": 0 },
+    { "menuUrl": "/credit/credit/management", "unprocessedCount": 5 },
+    {
+      "menuUrl": "/consignment/delegate/delegate-sales-index",
+      "unprocessedCount": 10
+    },
+    {
+      "menuUrl": "/consignment/settlement/list-settlement",
+      "unprocessedCount": 11
+    },
+    {
+      "menuUrl": "/after-sales/seller-operation-after-sales/seller-order-after-sales-list",
+      "unprocessedCount": 165
+    },
+    { "menuUrl": "/quotation/operation/list", "unprocessedCount": 77 }
+  ]
+}

@@ -1,18 +1,25 @@
 <template>
   <div>
-    <Layout>
-      <Button size="lg"></Button>
+    <Layout :menuAsideData="menuAsideData">
+      <div style="margin-left: 20px; font-size:12px">
+        <i class="iconfont">&#xa24;</i>
+        <ul>
+          <li>324</li>
+          <li>432</li>
+          <li>512</li>
+        </ul>
+      </div>
     </Layout>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Button, Layout } from './index'
+import { Layout } from './index'
+
 export default defineComponent({
   name: 'App',
   components: {
-    Button,
     Layout,
   },
 })
@@ -20,8 +27,4 @@ export default defineComponent({
 
 <style lang="less">
 @import url('./styles/index.less');
-* {
-  margin: 0;
-  padding: 0;
-}
 </style>
