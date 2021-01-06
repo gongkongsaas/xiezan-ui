@@ -1,5 +1,4 @@
 import { defineComponent, onMounted } from 'vue'
-import 'normalize.css'
 import MenuAside from './MenuAside/index'
 import HeaderNav from './HeaderNav/index'
 import { menuAsideData, testData } from '@/api/Layout/menu-aside'
@@ -11,7 +10,7 @@ export default defineComponent({
       console.log(testData())
     })
     return () => (
-      <div id="layout">
+      <div class="layout">
         <HeaderNav class="header-nav" />
         <div class="main-wrap">
           <MenuAside class="menu-aside" menuAsideData={menuAsideData.data} />

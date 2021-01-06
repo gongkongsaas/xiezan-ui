@@ -71,5 +71,8 @@
       "vue-cli-service lint",
       "git add"
     ]
+  },
+  "dependencies": {
+    "ant-design-vue": "2.0.0-rc.2"
   }
 }

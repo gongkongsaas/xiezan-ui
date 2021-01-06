@@ -13,7 +13,7 @@ export default defineComponent({
   setup(props) {
     return () => {
       return (
-        <div id="menu-aside">
+        <div class="menu-aside">
           <ul class="menu-list">
             {props.menuAsideData.map((item, index) => {
               if (item.code !== 'bottom') {

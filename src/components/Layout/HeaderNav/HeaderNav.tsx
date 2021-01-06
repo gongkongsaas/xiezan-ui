@@ -10,7 +10,7 @@ export default defineComponent({
   setup(props) {
     return () => {
       return (
-        <div id="header-nav">
+        <div class="header-nav">
           <div class="operation-main-information"></div>
           <div class="mall-company-name">
             <div class="company-name">{props.companyName}</div>
