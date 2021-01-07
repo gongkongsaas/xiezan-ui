@@ -1,65 +1,18 @@
 <template>
-  <div>
-    <Layout>
-      <Crumb title="商城公告">
-        <Button size="lg"></Button>
-      </Crumb>
-      1<br />1<br />
-      1<br />1<br />
-      1<br />1<br />
-      1<br />1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-      1<br />
-    </Layout>
-  </div>
+  <Layout>
+    <Crumb title="商城公告"> </Crumb>
+  </Layout>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Button, Layout, Crumb } from './index'
+import { Layout, Crumb } from './index'
+
 export default defineComponent({
   name: 'App',
   components: {
     Layout,
     Crumb,
-    Button,
   },
 })
 </script>

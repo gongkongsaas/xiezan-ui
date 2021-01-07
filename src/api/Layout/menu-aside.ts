@@ -5,8 +5,25 @@ import axios from 'axios'
 
 export const testData = async () => {
   const data = await axios
-    .get('http://dev.delixi.com/acl/menu/list-menu-count-info?_=1609903654206')
-    .then((res) => res)
+    .get('http://dev.delixi.com/acl/menu/list-menu-count-info')
+    .then((res: any) => {
+      if (res.code === 0) {
+        return res.data
+      }
+      return res
+    })
 
+  return data
+}
+
+export const testData2 = async () => {
+  const data = await axios
+    .get('http://dev.delixi.com/acl/menu/list')
+    .then((res: any) => {
+      if (res.code === 0) {
+        return res.data
+      }
+      return res
+    })
   return data
 }
