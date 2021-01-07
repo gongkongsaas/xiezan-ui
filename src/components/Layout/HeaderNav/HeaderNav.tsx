@@ -17,7 +17,7 @@ export default defineComponent({
       return (
         <div class="header-nav">
           <div class="header-information">
-            <a class="logo" href="/">
+            <a class="loga" href="/">
               <img src="/upload/logo/favorites_icon.png" alt="LOGO" />
             </a>
           </div>
