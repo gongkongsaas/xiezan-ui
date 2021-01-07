@@ -5,28 +5,56 @@
   font-size: 14px;
   color: #333;
   background: #fff;
-
-  .operation-main-information {
+  .header-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 90px;
     background-color: #1e2834;
-  }
-
-  .mall-company-name {
-    display: flex;
-    flex: 1;
-    border-bottom: 1px #e6e8ec solid;
-    line-height: 50px;
-    cursor: pointer;
-
-    .company-name {
-      padding: 0 20px;
+    .logo {
+      display: block;
+      width: 32px;
+      height: 32px;
+      border-radius: 32px;
+      overflow: hidden;
+      background: #fff;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
-
-  .option-box {
-    width: auto;
-    padding-left: 50px;
+  .header-option {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
     border-bottom: 1px #e6e8ec solid;
-    line-height: 50px;
+    .mall-company-name {
+      flex-grow: 1;
+      .company-name {
+        padding: 0 24px;
+        font-size: 14px;
+        line-height: 50px;
+      }
+    }
+    .search-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 330px;
+      height: 30px;
+      margin-right: 15px;
+      color: #333;
+      border: 1px #efefef solid;
+      background-color: transparent;
+    }
+    .option-box {
+      display: flex;
+      li {
+        margin: 0 4px;
+        padding: 0 10px;
+      }
+    }
   }
 }

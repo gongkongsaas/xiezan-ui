@@ -12,8 +12,8 @@ export default defineComponent({
     console.log(testData2)
 
     return () => (
-      <div id="layout" class="layout">
-        <HeaderNav class="header-nav" />
+      <div class="layout">
+        <HeaderNav />
         <div class="main-wrap">
           <MenuAside menuAsideData={menuAsideData.data} />
           <Main>
