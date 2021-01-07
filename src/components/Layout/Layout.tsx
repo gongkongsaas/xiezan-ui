@@ -9,8 +9,8 @@ import { Button } from 'ant-design-vue'
 export default defineComponent({
   name: 'Layout',
   setup(props, { slots }) {
-    console.log(testData)
-    console.log(testData2)
+    console.log(testData())
+    console.log(testData2())
 
     return () => (
       <div class="layout">

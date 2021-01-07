@@ -10,6 +10,7 @@ export const testData = async () => {
       if (res.code === 0) {
         return res.data
       }
+      return res
     })
 
   return data
@@ -22,6 +23,7 @@ export const testData2 = async () => {
       if (res.code === 0) {
         return res.data
       }
+      return res
     })
   return data
 }
