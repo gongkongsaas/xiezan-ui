@@ -1,10 +1,10 @@
 import { defineComponent } from 'vue'
-import 'normalize.css'
 import MenuAside from './MenuAside/index'
 import HeaderNav from './HeaderNav/index'
 import Main from './Main/index'
 import Footer from './Footer/index'
 import { menuAsideData, testData } from '@/api/Layout/menu-aside'
+import { userData } from '@/api/Layout/header-nav'
 
 export default defineComponent({
   name: 'Layout',

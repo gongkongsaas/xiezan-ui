@@ -8,7 +8,7 @@ export default defineComponent({
       default: '运营中心菜单',
     },
     userInfoData: {
-      type: Object as PropType<UserInfoType>,
+      type: Object as PropType<UserInfoType> | null,
       default: {},
     },
   },
