@@ -1,20 +1,25 @@
-import { defineComponent, onMounted } from 'vue'
+import { defineComponent } from 'vue'
 import MenuAside from './MenuAside/index'
 import HeaderNav from './HeaderNav/index'
-import { menuAsideData, testData } from '@/api/Layout/menu-aside'
+import Main from './Main/index'
+import Footer from './Footer/index'
+import { menuAsideData, testData, testData2 } from '@/api/Layout/menu-aside'
 
 export default defineComponent({
   name: 'Layout',
   setup(props, { slots }) {
-    onMounted(() => {
-      console.log(testData())
-    })
+    console.log(testData)
+    console.log(testData2)
+
     return () => (
-      <div class="layout">
+      <div id="layout" class="layout">
         <HeaderNav class="header-nav" />
         <div class="main-wrap">
-          <MenuAside class="menu-aside" menuAsideData={menuAsideData.data} />
-          <div class="content">{slots.default && slots.default()}</div>
+          <MenuAside menuAsideData={menuAsideData.data} />
+          <Main>
+            <div class="content">{slots.default && slots.default()}</div>
+            <Footer />
+          </Main>
         </div>
       </div>
     )

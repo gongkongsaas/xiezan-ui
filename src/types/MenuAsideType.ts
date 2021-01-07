@@ -11,5 +11,6 @@ export interface MenuAsideNavData {
   code: string
   level: number
   category: null | string
-  children: MenuAsideNavData[] | []
+  children: MenuAsideNavData[]
+  show?: boolean
 }
