@@ -51,7 +51,7 @@
         color: #ffffff;
       }
     }
-    
+
     .select {
       background-color: #3388ff;
       a {
@@ -89,4 +89,60 @@
     }
   }
 
+  // 控制
+  .secondNavControl {
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 70px;
+    margin-top: -70px;
+    border-left: 16px #eee solid;
+    border-top: 6px transparent solid;
+    border-bottom: 6px transparent solid;
+    cursor: pointer;
+
+    .iconfont {
+      position: absolute;
+      top: 22px;
+      left: -20px;
+      font-size: 24px;
+      color: #666666;
+    }
+  }
+
+  .open {
+    left: 228px;
+    .iconfont {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .close {
+    left: 98px;
+    .iconfont {
+      transform: rotate(90deg);
+    }
+  }
+
+  // 状态
+  .openSecondNav {
+    width: 130px;
+    opacity: 1;
+  }
+
+  .closeSecondNav {
+    width: 0;
+    opacity: 0;
+  }
+
+  .hoverSecondNav {
+    position: absolute;
+    left: 90px;
+    width: 130px;
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

@@ -28,7 +28,8 @@
   "types": "dist/types/index.d.ts",
   "peerDependencies": {
     "ant-design-vue": "^2.0.0-rc.2",
-    "vue": ">=3.0.0"
+    "vue": ">=3.0.0",
+    "axios": "^0.21.1"
   },
   "scripts": {
     "serve": "vue-cli-service serve",

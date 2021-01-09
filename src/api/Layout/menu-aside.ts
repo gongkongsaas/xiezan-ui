@@ -6,7 +6,7 @@ import axios from 'axios'
 export const testData = async () => {
   const data = await axios
     .get('http://dev.delixi.com/acl/menu/list-menu-count-info')
-    .then((res: any) => {
+    .then((res) => {
       if (res.data.code === 0) {
         return res.data.data
       }
@@ -15,10 +15,10 @@ export const testData = async () => {
   return data
 }
 
-export const getMenuAsideData = async () => {
-  await axios.get('http://dev.delixi.com/acl/menu/list').then((res: any) => {
+export const apiMenuAsideData = axios
+  .get('http://dev.delixi.com/acl/menu/list')
+  .then((res) => {
     if (res.data.code === 0) {
-      return res.data.data
+      return res.data
     }
   })
-}

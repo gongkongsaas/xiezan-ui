@@ -1,4 +1,4 @@
-import { defineComponent, PropType, ref } from 'vue'
+import { defineComponent, PropType } from 'vue'
 import { MenuAsideNavData } from '@/types/MenuAsideType'
 
 export default defineComponent({
@@ -15,10 +15,11 @@ export default defineComponent({
       data.show = !data.show
     }
 
-    // line
+    // line 类型
     const lineElem = <div class="line"></div>
+
     // normal
-    const normalElem = (data: MenuAsideNavData, index: number) => {
+    const normalElem = (data: MenuAsideNavData) => {
       const itemData = data.children
       if (itemData.length < 1) {
         // 没有下拉菜单
@@ -62,11 +63,11 @@ export default defineComponent({
 
     return () => (
       <div class="second-nav-item">
-        {props.itemData.map((item, index) => {
+        {props.itemData.map((item) => {
           if (item.name === 'line') {
             return lineElem
           } else {
-            return normalElem(item, index)
+            return normalElem(item)
           }
         })}
       </div>
