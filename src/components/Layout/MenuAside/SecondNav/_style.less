@@ -1,12 +1,30 @@
 .second-nav {
+  width: 130px;
+  height: calc(100vh - 50px);
+  padding-top: 8px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  color: rgba(212, 212, 212, 0.996);
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  .drop-down {
+    position: fixed;
+    bottom: 0;
+    left: 90px;
     width: 130px;
-    height: calc(100vh - 50px);
-    padding-top: 8px;
-    padding-bottom: 40px;
+    height: 40px;
     background-color: #ffffff;
-    color: rgba(212, 212, 212, 0.996);
-    box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scrollbar-width: none;
+    text-align: center;
+    line-height: 40px;
+
+    .iconfont {
+      display: inline-block;
+      font-size: 24px;
+      color: #666666;
+      transform: rotate(180deg);
+    }
+  }
 }

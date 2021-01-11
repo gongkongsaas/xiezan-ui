@@ -15,10 +15,8 @@ export const testData = async () => {
   return data
 }
 
-export const apiMenuAsideData = axios
-  .get('http://dev.delixi.com/acl/menu/list')
-  .then((res) => {
-    if (res.data.code === 0) {
-      return res.data
-    }
-  })
+export const apiMenuAsideData = axios.get('/acl/menu/list').then((res) => {
+  if (res.data.code === 0) {
+    return res.data
+  }
+})
