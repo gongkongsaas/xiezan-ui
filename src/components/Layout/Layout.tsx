@@ -1,10 +1,10 @@
 import { defineComponent, ref, PropType } from 'vue'
-import { MenuAsideNavData } from '@/types/MenuAsideType'
-import MenuAside from './MenuAside/index'
-import HeaderNav from './HeaderNav/index'
-import Main from './Main/index'
-import Footer from './Footer/index'
-import { apiMenuAsideData, menuAsideData } from '@/api/Layout/menu-aside'
+import { MenuAsideNavData } from '@/components/layout/types/MenuAsideType'
+import MenuAside from './menu-aside/index'
+import HeaderNav from './header-nav/index'
+import Main from './main/index'
+import Footer from './footer/index'
+import { apiMenuAsideData, menuAsideData } from '@/api/layout/menuAside'
 
 export default defineComponent({
   name: 'Layout',

@@ -1,7 +1,7 @@
 import { defineComponent, PropType, ref } from 'vue'
-import { MenuAsideNavData } from '@/types/MenuAsideType'
-import SecondNav from './SecondNav/SecondNav'
-import SecondNavItem from './SecondNavItem/SecondNavItem'
+import { MenuAsideNavData } from '../types/MenuAsideType'
+import SecondNav from './second-nav/secondNav'
+import SecondNavItem from './second-nav-item/secondNavItem'
 
 export default defineComponent({
   props: {

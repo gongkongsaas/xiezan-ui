@@ -1,5 +1,5 @@
 import { defineComponent, PropType } from 'vue'
-import { UserInfoType } from '@/types/userInfoType'
+import { UserInfoType } from '@/components/layout/types/userInfoType'
 
 export default defineComponent({
   props: {

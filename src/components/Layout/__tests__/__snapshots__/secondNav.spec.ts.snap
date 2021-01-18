@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SecondNav testSlot 1`] = `
+<div class="second-nav">
+  <div class="second-nav-item">test</div>
+  <div class="drop-down" style="display: none;"><i class="iconfont"></i></div>
+</div>
+`;

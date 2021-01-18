@@ -8,48 +8,34 @@
     "email": "865116277@qq.com",
     "url": "https://github.com/iworkerweb/assistech-vue"
   },
-  "license": "MIT",
-  "keywords": [
-    "vue3",
-    "typescript",
-    "组件库",
-    "协赞"
-  ],
-  "homepage": "https://github.com/iworkerweb/assistech-vue",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/iworkerweb/assistech-vue"
-  },
-  "files": [
-    "dist"
-  ],
-  "main": "dist/index.common.js",
-  "module": "dist/index.common.js",
-  "types": "dist/types/index.d.ts",
-  "peerDependencies": {
-    "ant-design-vue": "^2.0.0-rc.2",
-    "axios": "^0.21.1",
-    "vue": ">=3.0.0"
-  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "build-css": "lessc ./src/styles/index.less ./dist/index.css",
-    "clean": "rimraf ./dist",
     "build:lib": "yarn lint && vue-cli-service build --target lib --name index ./src/index.tsx && yarn build-css",
+    "clean": "rimraf ./dist",
     "prepublishOnly": "yarn build:lib"
   },
+  "main": "dist/index.common.js",
+  "module": "dist/index.common.js",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
+    "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "^2.0.0-beta.14",
     "ant-design-vue": "^2.0.0-rc.2",
     "axios": "^0.21.1",
     "babel-plugin-import": "^1.13.3",
@@ -63,15 +49,34 @@
     "prettier": "^1.19.1",
     "rimraf": "^3.0.2",
     "typescript": "~3.9.3",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-jest": "^5.0.0-0"
+  },
+  "peerDependencies": {
+    "ant-design-vue": "^2.0.0-rc.2",
+    "axios": "^0.21.1",
+    "vue": ">=3.0.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
+  "homepage": "https://github.com/iworkerweb/assistech-vue",
+  "keywords": [
+    "vue3",
+    "typescript",
+    "组件库",
+    "协赞"
+  ],
+  "license": "MIT",
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
       "vue-cli-service lint",
       "git add"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iworkerweb/assistech-vue"
+  },
+  "types": "dist/types/index.d.ts"
 }

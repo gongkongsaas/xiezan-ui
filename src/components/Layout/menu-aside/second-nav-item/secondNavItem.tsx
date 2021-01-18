@@ -1,5 +1,5 @@
 import { defineComponent, PropType } from 'vue'
-import { MenuAsideNavData } from '@/types/MenuAsideType'
+import { MenuAsideNavData } from '@/components/layout/types/MenuAsideType'
 
 export default defineComponent({
   name: 'SecondNavItem',
