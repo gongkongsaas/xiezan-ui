@@ -28,23 +28,24 @@ export default defineComponent({
     // 更新二级导航状态
     const secondNavStatusRef = ref<boolean>(props.secondNavStatus)
 
-    return () => (
-      <div class="layout">
-        <HeaderNav />
-        <div class="main-wrap">
-          {menuAsideDataRef.value.length > 0 ? (
-            <MenuAside
-              menuAsideData={menuAsideDataRef.value}
-              secondNavStatus={secondNavStatusRef.value}
-            />
-          ) : null}
-
-          <Main>
-            <div class="content">{slots.default && slots.default()}</div>
-            <Footer />
-          </Main>
-        </div>
-      </div>
-    )
+    return () => {
+      if (menuAsideDataRef.value.length > 0) {
+        return (
+          <div class="layout">
+            <HeaderNav />
+            <div class="main-wrap">
+              <MenuAside
+                menuAsideData={menuAsideDataRef.value}
+                secondNavStatus={secondNavStatusRef.value}
+              />
+              <Main>
+                <div class="content">{slots.default && slots.default()}</div>
+                <Footer />
+              </Main>
+            </div>
+          </div>
+        )
+      }
+    }
   },
 })

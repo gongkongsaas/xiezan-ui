@@ -60,8 +60,8 @@ export default defineComponent({
       }
     }
 
-    // menu渲染
-    const updateMenu = (item: MenuAsideNavData, index: number) => {
+    // 渲染menu
+    const renderMenu = (item: MenuAsideNavData, index: number) => {
       if (item.code === 'blank') {
         // style: blank
         return <li></li>
@@ -100,7 +100,7 @@ export default defineComponent({
       return (
         <div class="menu-aside" onMouseleave={onHoverMenuItem.bind(null, -1)}>
           <ul class="menu-list">
-            {props.menuAsideData.map((item, index) => updateMenu(item, index))}
+            {props.menuAsideData.map((item, index) => renderMenu(item, index))}
           </ul>
           <div
             class={[
