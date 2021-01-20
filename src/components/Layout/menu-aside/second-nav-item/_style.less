@@ -1,0 +1,51 @@
+.second-nav-item {
+  a {
+    color: #666666;
+  }
+  span {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .line {
+    width: auto;
+    height: 1px;
+    margin: 19px 12px 20px;
+    background-color: #ededed;
+  }
+  .normal {
+    height: auto;
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #666666;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    .open-icon {
+      display: inline-block;
+      transform: rotate(180deg);
+      transition: transform 0.1s;
+    }
+
+    .close-icon {
+      display: inline-block;
+      transform: rotate(90deg);
+      transition: transform 0.1s;
+    }
+  }
+
+  ul {
+    margin-left: 24px;
+
+    li {
+      height: 40px;
+      margin-left: 8px;
+      font-size: 14px;
+      line-height: 40px;
+      color: #666666;
+    }
+  }
+}

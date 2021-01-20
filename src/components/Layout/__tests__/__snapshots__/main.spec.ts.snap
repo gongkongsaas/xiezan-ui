@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main slot is health 1`] = `
+<div class="main-box">
+  <main class="main">
+    <div class="main-inner">testSlot</div>
+  </main>
+</div>
+`;

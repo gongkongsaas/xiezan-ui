@@ -1,0 +1,61 @@
+.header-nav {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+  .header-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    background-color: #1e2834;
+    .logo {
+      display: block;
+      width: 32px;
+      height: 32px;
+      border-radius: 32px;
+      overflow: hidden;
+      background: #fff;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .header-option {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    border-bottom: 1px #e6e8ec solid;
+    .mall-company-name {
+      flex-grow: 1;
+      .company-name {
+        padding: 0 24px;
+        font-size: 14px;
+        line-height: 50px;
+      }
+    }
+    .search-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 330px;
+      height: 30px;
+      margin-right: 15px;
+      color: #333;
+      border: 1px #efefef solid;
+      background-color: transparent;
+    }
+    .option-box {
+      display: flex;
+      margin-bottom: 0;
+      li {
+        margin: 0 4px;
+        padding: 0 10px;
+      }
+    }
+  }
+}

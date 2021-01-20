@@ -1,35 +1,51 @@
-import MenuAside from './MenuAside/index'
-import HeaderNav from './HeaderNav/index'
-import { defineComponent, h, PropType } from 'vue'
-
-interface MenuAsideData {
-  id: number
-  msg: string
-  path: string
-}
+import { defineComponent, ref, PropType } from 'vue'
+import { MenuAsideNavData } from '@/components/layout/types/MenuAsideType'
+import MenuAside from './menu-aside/index'
+import HeaderNav from './header-nav/index'
+import Main from './main/index'
+import Footer from './footer/index'
+import { apiMenuAsideData, menuAsideData } from '@/api/layout/menuAside'
 
 export default defineComponent({
+  name: 'Layout',
   props: {
-    menuAsideData: {
-      type: Array as PropType<MenuAsideData[]> | null,
-      default: () => {
-        return []
-      },
+    secondNavStatus: {
+      type: Boolean as PropType<boolean>,
+      default: true,
     },
   },
+  setup(props, { slots }) {
+    // 获取menu数据
+    const menuAsideDataRef = ref<MenuAsideNavData[]>(menuAsideData.data)
+    const getMenuAsideData = async () => {
+      const res = await apiMenuAsideData
+      if (res.code === 0) {
+        menuAsideDataRef.value = res.data
+      }
+    }
+    getMenuAsideData()
 
-  setup(props) {
-    return () => (
-      <div id="layout">
-        <HeaderNav class="header-nav" />
-        <div class="main-wrap">
-          <MenuAside
-            class="menu-aside"
-            v-bind-menuAsideData={props.menuAsideData}
-          />
-          <div class="content"></div>
-        </div>
-      </div>
-    )
+    // 更新二级导航状态
+    const secondNavStatusRef = ref<boolean>(props.secondNavStatus)
+
+    return () => {
+      if (menuAsideDataRef.value.length > 0) {
+        return (
+          <div class="layout">
+            <HeaderNav />
+            <div class="main-wrap">
+              <MenuAside
+                menuAsideData={menuAsideDataRef.value}
+                secondNavStatus={secondNavStatusRef.value}
+              />
+              <Main>
+                <div class="content">{slots.default && slots.default()}</div>
+                <Footer />
+              </Main>
+            </div>
+          </div>
+        )
+      }
+    }
   },
 })

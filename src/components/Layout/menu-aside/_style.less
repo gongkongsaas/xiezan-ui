@@ -1,0 +1,149 @@
+@import './second-nav/_style.less';
+@import './second-nav-item/_style.less';
+
+.menu-aside {
+  position: relative;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  .menu-list {
+    min-width: 90px;
+    width: 90px;
+    height: calc(100vh - 50px);
+    padding-top: 8px;
+    color: rgba(212, 212, 212, 0.996);
+    background: #1e2834;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+
+    li {
+      width: 90px;
+      height: 40px;
+      padding-left: 16px;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: rgba(212, 212, 212, 0.996);
+
+        i {
+          flex-shrink: 0;
+          text-align: left;
+          width: 24px;
+          font-size: 20px;
+        }
+        span {
+          font-size: 14px;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .active {
+      background-color: #434e6c;
+      a {
+        color: #ffffff;
+      }
+    }
+
+    .select {
+      background-color: #3388ff;
+      a {
+        color: #ffffff;
+      }
+    }
+
+    .bottom {
+      position: absolute;
+      bottom: 0;
+      width: 74px;
+      height: 40px;
+      padding-left: 16px;
+      background-color: #1e2834;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: rgba(212, 212, 212, 0.996);
+
+        i {
+          flex-shrink: 0;
+          text-align: left;
+          width: 24px;
+          font-size: 20px;
+        }
+        span {
+          font-size: 14px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  // 控制
+  .secondNavControl {
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 70px;
+    margin-top: -70px;
+    border-left: 16px #eee solid;
+    border-top: 6px transparent solid;
+    border-bottom: 6px transparent solid;
+    cursor: pointer;
+
+    .iconfont {
+      position: absolute;
+      top: 10px;
+      left: -20px;
+      font-size: 24px;
+      color: #666666;
+    }
+
+    &.open {
+      left: 220px;
+      .iconfont {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &.close {
+      left: 90px;
+      .iconfont {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  // 状态
+  .openSecondNav {
+    width: 130px;
+    opacity: 1;
+  }
+
+  .closeSecondNav {
+    width: 0;
+    opacity: 0;
+  }
+
+  .hoverSecondNav {
+    position: absolute;
+    left: 90px;
+    width: 130px;
+    opacity: 1;
+    z-index: 1000;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

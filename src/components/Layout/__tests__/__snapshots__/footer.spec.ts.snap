@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`footer footer is mounted 1`] = `<footer class="footer"></footer>`;

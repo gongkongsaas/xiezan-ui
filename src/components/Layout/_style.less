@@ -1,21 +1,19 @@
-@import './HeaderNav/_style.less';
-@import './MenuAside/_style.less';
-#layout {
-    width: 100%;
-    height: 100%;
-  
-    .main-wrap {
-      display: flex;
-  
-      .menu-aside {
-        width: 90px;
-        height: calc(100vh - 50px);
-        color: rgba(212, 212, 212, 0.996);
-        background: #1e2834;
-      }
-  
-      .content {
-        flex: 1;
-      }
+@import './header-nav/_style.less';
+@import './menu-aside/_style.less';
+@import './main/_style.less';
+@import './footer/_style.less';
+
+.layout {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .main-wrap {
+    display: flex;
+    height: calc(100vh - 50px);
+
+    .content {
+      flex: 1;
     }
   }
+}
